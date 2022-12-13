@@ -5,3 +5,7 @@ def szukaj():
         return dict({search: "został znaleziony na liście"})
     else:
         print(search, "nie został znaleziony na liście")
+
+def odejmowanie(a, b):
+    wynik = a - b
+    return wynik

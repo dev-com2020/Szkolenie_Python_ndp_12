@@ -14,3 +14,6 @@ from pakiet import *
 slownik = in_list.szukaj()
 slownik['T748'] = 'książka'
 print(slownik)
+
+dodaj = in_list.odejmowanie(5, 1)
+print(f'Wynik dodawania: {dodaj}')
