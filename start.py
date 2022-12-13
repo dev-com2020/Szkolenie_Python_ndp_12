@@ -1,10 +1,16 @@
-from poniedzialek.wprowadzanie2 import wiek, imie
+# from poniedzialek.wprowadzanie2 import wiek, imie
+#
+# print("Tutaj plik start...")
+# lista = []
+# slownik = {}
+# lista.append(wiek)
+# lista.append(imie)
+# slownik[imie] = int(wiek)
+# print(lista)
+# print(slownik)
 
-print("Tutaj plik start...")
-lista = []
-slownik = {}
-lista.append(wiek)
-lista.append(imie)
-slownik[imie] = int(wiek)
-print(lista)
+from pakiet import *
+
+slownik = in_list.szukaj()
+slownik['T748'] = 'książka'
 print(slownik)
