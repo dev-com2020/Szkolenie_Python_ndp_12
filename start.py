@@ -11,9 +11,28 @@
 
 from pakiet import *
 
-slownik = in_list.szukaj()
-slownik['T748'] = 'książka'
-print(slownik)
+#
+# slownik = in_list.szukaj()
+# slownik['T748'] = 'książka'
+# print(slownik)
 
-dodaj = in_list.odejmowanie(5, 1)
-print(f'Wynik dodawania: {dodaj}')
+liczba1 = 5
+liczba2 = 1
+
+dodaj = in_list.odejmowanie(liczba1, liczba2)
+print(f'Wynik odejmowania: {dodaj}')
+
+dodaj = in_list.odejmowanie(liczba2)
+print(f'Wynik odejmowania: {dodaj}')
+
+dodaj = in_list.odejmowanie()
+print(f'Wynik odejmowania: {dodaj}')
+
+dodaj = in_list.odejmowanie(a=liczba1, b=liczba2)
+print(f'Wynik odejmowania: {dodaj}')
+
+dodaj = in_list.odejmowanie(b=liczba2)
+print(f'Wynik odejmowania: {dodaj}')
+
+dodaj = in_list.odejmowanie(2, b=liczba2)
+print(f'Wynik odejmowania: {dodaj}')

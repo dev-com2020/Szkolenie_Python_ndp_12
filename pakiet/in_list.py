@@ -6,6 +6,7 @@ def szukaj():
     else:
         print(search, "nie został znaleziony na liście")
 
-def odejmowanie(a, b):
+
+def odejmowanie(a=0, b=0):
     wynik = a - b
     return wynik
