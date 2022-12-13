@@ -1,10 +1,13 @@
 import argparse
 import sys
+import time
 
 
 def liczby(number, other_number, output):
     wynik = number + other_number
+    local_time = time.ctime()
     print(f"Wynik dodawania wynosi: {wynik}", file=output)
+    print(f'Stempel czasowy={local_time}', file=output)
 
 
 parser = argparse.ArgumentParser()
