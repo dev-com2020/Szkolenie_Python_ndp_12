@@ -6,4 +6,11 @@ while keep_going == 't':
     commission = sales * comm_rate
     print('Premia wynosi', format(commission, '.2f'), 'zł')
     keep_going = input('Czy chcesz obliczyć kolejną premie?(jeśli tak, wpisz "t")')
-print("Obliczono premię.")
+    print("Obliczono premię.")
+
+MAX_TEMP = 102.5
+temperature = float(input("podaj temperaturę substancji: "))
+while temperature > MAX_TEMP:
+    print('Temperatura jest zbyt wysoka')
+    temperature = float(input('Podaj ponownie temperaturę: '))
+print('Temperatura jest odpowiednia!')
