@@ -13,5 +13,5 @@ print(x)
 slownik = {1: "Azor", 2: "Reksio", 3: "Fafik"}
 print({wartosc: klucz for klucz, wartosc in slownik.items()})
 
-kwadrat = [i ** 2 for i in range(10)]
+kwadrat = [i ** 2 for i in range(1, 11)]
 print(kwadrat)
