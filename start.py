@@ -1,4 +1,4 @@
-from folder.wprowadzanie2 import wiek, imie
+from poniedzialek.wprowadzanie2 import wiek, imie
 
 print("Tutaj plik start...")
 lista = []
