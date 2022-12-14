@@ -17,7 +17,7 @@
 #     plik.write("Coś..")
 
 lista = []
-with open('dane.txt', 'r') as plik:
+with open('../dane.txt', 'r') as plik:
     lista.append(plik.read())
 
 print(lista)
