@@ -28,6 +28,7 @@ def counter(start=0):
         yield n
         n += 1
 
+
 def counter2(start=0):
     n = start
     while True:
@@ -37,18 +38,23 @@ def counter2(start=0):
             break
         n += 1
 
-c = counter2()
-print(next(c))
-print(next(c))
-print(next(c))
-print(c.send('OK'))
-print(next(c))
-print(next(c))
-print(c.send('q'))
+
+# c = counter2()
+# print(next(c))
+# print(next(c))
+# print(next(c))
+# print(c.send('OK'))
+# print(next(c))
+# print(next(c))
+# print(c.send('q'))
 
 
+def print_squares(start, end):
+    yield from (n ** 2 for n in range(start, end))
 
 
+for n in print_squares(2, 5):
+    print(n)
 
 # c = counter()
 # for i in range(5):
