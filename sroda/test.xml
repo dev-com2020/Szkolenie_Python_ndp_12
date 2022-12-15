@@ -1,0 +1,24 @@
+<table name="ecat">
+
+  <tuple>
+    <atom name="TaxAccNo1">test</atom>
+    <atom name="TaxAccNo2">00005504</atom>
+    <atom name="TaxAccNo3">1</atom>
+    <atom name="irn">100107</atom>
+  </tuple>
+
+  <tuple>
+    <atom name="TaxAccNo1">test</atom>
+    <atom name="TaxAccNo2">00005505</atom>
+    <atom name="TaxAccNo3">2</atom>
+    <atom name="irn">100108</atom>
+  </tuple>
+
+  <tuple>
+    <atom name="TaxAccNo1">test</atom>
+    <atom name="TaxAccNo2">00005506</atom>
+    <atom name="TaxAccNo3">3</atom>
+    <atom name="irn">100109</atom>
+  </tuple>
+
+</table>

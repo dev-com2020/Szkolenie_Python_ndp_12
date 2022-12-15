@@ -2,7 +2,7 @@ import json
 
 lista = []
 
-with open('bohaterowie.json', 'r') as f:
+with open('../bohaterowie.json', 'r') as f:
     data = json.load(f)
 
 # print(data)
@@ -14,7 +14,7 @@ with open('bohaterowie.json', 'r') as f:
 for i in data['members']:
     lista.append(i)
 
-with open('bohaterowie2.json', 'w') as f:
+with open('../bohaterowie2.json', 'w') as f:
     data = json.dump(lista, f, indent=4)
 
 # print(lista)

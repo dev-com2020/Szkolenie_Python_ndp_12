@@ -11,7 +11,7 @@ person = {"name": "Bob",
           "children": None
           }
 
-with open('dane.json', 'w') as plik:
+with open('../dane.json', 'w') as plik:
     json.dump(person, plik, indent=4)
 
 

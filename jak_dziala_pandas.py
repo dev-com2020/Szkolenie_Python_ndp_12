@@ -1,4 +1,7 @@
+import xml
+import xml.etree.ElementTree
 import pandas as pd
 
-data = pd.read_json('bohaterowie2.json')
-data.to_csv('wyniki.csv')
+e = xml.etree.ElementTree.parse(open("./sroda/test.xml"))
+f = pd.DataFrame([{a.get('name'): a.text for a in t} for t in e.findall("tuple")])
+f.to_json('test2.json')
