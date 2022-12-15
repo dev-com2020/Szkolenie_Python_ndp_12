@@ -25,6 +25,11 @@ class Kura(Ptak):
         print(f'Tu {self.gatunek}, ja nie latam :)')
 
 
+class Mutant(Kura, Orzel, Ptak):
+    def gryz(self):
+        print("Atakuje!!!")
+
+
 ptak1 = Orzel('orzeł', 100)
 ptak1.lataj()
 ptak1.poluj()
@@ -32,3 +37,11 @@ ptak1.wydajOdglos()
 
 ptak2 = Kura('kura', 1)
 ptak2.lataj()
+ptak2.wydajOdglos()
+
+print(Mutant.mro())
+
+mutant = Mutant('mutant', 0)
+mutant.lataj()
+mutant.wydajOdglos()
+
