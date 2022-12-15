@@ -5,15 +5,28 @@ class Student:
         self.name = name
         self.age = age
 
-    def change_school(self, name):
-        print(self.school_name)
-        self.school_name = name
-        print(self.school_name)
+    @classmethod
+    def change_school(cls, name):
+        print(Student.school_name)
+        Student.school_name = name
+        print(Student.school_name)
+
+
+class Teacher(Student):
+    @classmethod
+    def change_school(cls, name):
+        print("2", Teacher.school_name)
+        Student.school_name = name
+        print("2", Teacher.school_name)
 
 
 tomek = Student('Tomek', 24)
-tomek.change_school('XYZ')
+Student.change_school('XYZ2')
 print(tomek.school_name)
 
 ania = Student('Ania', 19)
 print(ania.school_name)
+
+stefan = Teacher("Stefan", 45)
+Teacher.change_school('XYZ3')
+print(stefan.school_name)
