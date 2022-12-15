@@ -21,6 +21,11 @@ class Orzel(Ptak):
 
 
 class Kura(Ptak):
+
+    def __init__(self, gatunek, jaja):
+        super().__init__(gatunek, 0)
+        self.ilosc_jaj = jaja
+
     def lataj(self):
         print(f'Tu {self.gatunek}, ja nie latam :)')
 
@@ -44,4 +49,3 @@ print(Mutant.mro())
 mutant = Mutant('mutant', 0)
 mutant.lataj()
 mutant.wydajOdglos()
-
