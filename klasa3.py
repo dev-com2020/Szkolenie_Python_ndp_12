@@ -1,4 +1,7 @@
-class Ptak:
+from abc import ABC, abstractmethod
+
+
+class Ptak(ABC):
 
     def __init__(self, gatunek, szybkosc):
         self.gatunek = gatunek
@@ -7,6 +10,7 @@ class Ptak:
     def lataj(self):
         print(f'Tu {self.gatunek}, startuje i lecę z prędkością {self.szybkosc}')
 
+    @abstractmethod
     def wydajOdglos(self):
         pass
 
@@ -29,10 +33,16 @@ class Kura(Ptak):
     def lataj(self):
         print(f'Tu {self.gatunek}, ja nie latam :)')
 
+    def wydajOdglos(self):
+        print("kokokok")
+
 
 class Mutant(Kura, Orzel, Ptak):
     def gryz(self):
         print("Atakuje!!!")
+
+    def wydajOdglos(self):
+        print("grrrr")
 
 
 ptak1 = Orzel('orzeł', 100)
