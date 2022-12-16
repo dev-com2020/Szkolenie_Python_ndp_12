@@ -31,7 +31,8 @@ films = pd.read_csv('film.csv',
 #
 x = films.groupby(['Year', 'Subject']).agg(avg_popularity=('Popularity', 'mean'))
 x = x.avg_popularity.apply(lambda x: 'Bardzo popularny' if x > 60 else 'Niszowy')
-print(x.unstack(fill_value='brak danych'))
+x.unstack(fill_value='brak danych')
+x.to_csv("test1111.csv")
 
 # pd.pivot_table(films,
 #                index='Year',
