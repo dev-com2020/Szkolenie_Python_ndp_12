@@ -27,4 +27,15 @@ films = pd.read_csv('film.csv',
 # print(films.groupby('Year').Popularity.mean())
 # print(films.groupby(['Year', 'Subject']).Length.mean())
 # print(films.groupby('Year').agg({'Length': ['min', 'max'], 'Popularity': ['min', 'max']}))
-print(films[(films['Year'] >= 1980) & (films['Year'] <= 1990)].groupby('Year').Length.mean())
+# print(films[(films['Year'] >= 1980) & (films['Year'] <= 1990)].groupby('Year').Length.mean())
+#
+x = films.groupby(['Year', 'Subject']).agg(avg_popularity=('Popularity', 'mean'))
+x = x.avg_popularity.apply(lambda x: 'Bardzo popularny' if x > 60 else 'Niszowy')
+print(x.unstack(fill_value='brak danych'))
+
+# pd.pivot_table(films,
+#                index='Year',
+#                columns='Subject',
+#                values='Popularity',
+#                aggfunc='mean')
+
