@@ -1,7 +1,7 @@
 import re
 import xml.etree.ElementTree as ET
 
-tree = ET.parse('../movies.xml')
+tree = ET.parse('../dane/movies.xml')
 root = tree.getroot()
 # print(root.tag)
 # print(root.attrib)

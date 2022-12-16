@@ -1,6 +1,6 @@
 import json
 
-with open('../bohaterowie.json', 'r') as f:
+with open('../dane/bohaterowie.json', 'r') as f:
     data = json.load(f)
 
 lista = []

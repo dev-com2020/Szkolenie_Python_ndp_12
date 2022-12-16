@@ -16,7 +16,7 @@ def mnozenie(a, b):
     try:
         wynik = int(a) * int(b)
     except Exception as e:
-        plik = open('error.log', 'a')
+        plik = open('../dane/error.log', 'a')
         plik.write(str(e.args))
         return 1
     else:

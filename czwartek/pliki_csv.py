@@ -2,21 +2,21 @@ import csv
 
 lista = []
 
-with open('dane.csv') as file:
+with open('../dane/dane.csv') as file:
     reader = csv.reader(file)
     for i in reader:
         lista.append(i)
 
 lista[1][1] = "tomek"
 
-with open('dane2.csv', 'w', newline="") as file:
+with open('../dane/dane2.csv', 'w', newline="") as file:
     writer = csv.writer(file)
     writer.writerows(lista)
     writer.writerow([3, 'Arnold', "Warszawa"])
     writer.writerow([3, 'Hubert'])
     writer.writerow([3, '', 'Kielce'])
 
-with open('dane3.csv', 'w', newline="") as file:
+with open('../dane/dane3.csv', 'w', newline="") as file:
     names = ['name', 'score']
     writer = csv.DictWriter(file, fieldnames=names)
     writer.writeheader()

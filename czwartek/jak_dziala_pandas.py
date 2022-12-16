@@ -6,4 +6,4 @@ import pandas as pd
 # print(f)
 # f.to_json('test2.json')
 
-print(pd.read_csv('dane2.csv'))
+print(pd.read_csv('../dane/dane2.csv'))

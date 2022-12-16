@@ -3,12 +3,12 @@ from time import sleep, perf_counter
 
 
 def task(id):
-    plik1 = open('t1.txt', 'w')
+    plik1 = open('../dane/t1.txt', 'w')
     plik1.write(str(id))
     sleep(1)
 
 def task2(id):
-    plik2 = open('t2.txt', 'w')
+    plik2 = open('../dane/t2.txt', 'w')
     plik2.write(str(id))
     sleep(1)
 
