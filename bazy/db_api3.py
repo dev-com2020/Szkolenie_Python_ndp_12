@@ -3,11 +3,11 @@ import sqlite3
 try:
     sqliteConnection = sqlite3.connect('sqlite_python.db')
     insert = """
-                INSERT INTO 
+                INSERT INTO software (id,name,price) VALUES (1,'Python',200)
              """
     cursor = sqliteConnection.cursor()
+    cursor.execute(insert)
     print("Baza została podłączona...")
-
 
     sqliteConnection.commit()
 
