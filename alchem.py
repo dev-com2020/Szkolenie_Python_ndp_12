@@ -16,5 +16,4 @@ class Customers(Base):
     address = Column(String)
     email = Column(String)
 
-
 Base.metadata.create_all(engine)
