@@ -25,5 +25,6 @@ kostium['Nowa'] = "brak"
 kostium.loc[kostium['1'] == 'Doll', 'Nowa'] = "jest"
 # print(kostium.rename(columns={"1": 'Pierwsze_miejsce'}))
 kostium['Złączone'] = kostium['2'] + " / " + kostium['3']
-
+kostium[['Sześć', "Siedem"]] = kostium.Złączone.str.split('/', expand=True)
+print(kostium)
 # kostium.to_excel("ttt.xlsx")
